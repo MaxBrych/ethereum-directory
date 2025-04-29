@@ -88,6 +88,11 @@ html.sidebar-open {
   }
 }
 
+  /* Prevent content from being pushed to the right when sidebar is open */
+  html.sidebar-open body {
+    overflow: hidden;
+  }
+
 @media (min-width: 768px) {
   body {
     padding-left: 0; /* The sidebar is fixed and the main content has margin-left */

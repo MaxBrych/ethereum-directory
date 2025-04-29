@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import NewsletterSubscription from "./newsletter-subscription"
 
 interface Tag {
@@ -33,13 +34,26 @@ export default function Hero({ tags }: { tags: Tag[] }) {
 
   return (
     <div className="relative overflow-hidden py-20 px-6 md:px-10 lg:px-16">
-      {/* Background gradient rings */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-[30%] -left-[10%] w-[70%] h-[70%] rounded-full bg-gradient-to-r from-gray-90 to-white blur-3xl"></div>
-        <div className="absolute -bottom-[30%] -right-[10%] w-[70%] h-[70%] rounded-full bg-gradient-to-r from-white to-gray-90 blur-3xl"></div>
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/bg-image.png"
+          alt="Ethereum Network"
+          fill
+          className="object-cover opacity-60"
+          priority
+        />
+        {/* Overlay gradient for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/70 to-neutral-950/90"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      {/* Background gradient rings - reduced opacity to blend with the image */}
+      <div className="absolute inset-0 overflow-hidden z-10">
+        <div className="absolute -top-[30%] -left-[10%] w-[70%] h-[70%] rounded-full bg-gradient-to-r from-indigo-500/10 to-purple-600/10 blur-3xl"></div>
+        <div className="absolute -bottom-[30%] -right-[10%] w-[70%] h-[70%] rounded-full bg-gradient-to-r from-purple-600/10 to-indigo-500/10 blur-3xl"></div>
+      </div>
+
+      <div className="relative z-20 max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6">All Ethereum tools in one place</h1>
         <p className="text-xl text-neutral-300 mb-8">
           Discover the best wallets, dApps, learning resources, services, and events in the Ethereum ecosystem

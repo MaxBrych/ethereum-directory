@@ -72,7 +72,7 @@ export function MultiSelect({ options, selected, onChange }: MultiSelectProps) {
           </div>
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-full p-0" align="start">
+      <PopoverContent className="w-full max-w-[var(--radix-popover-trigger-width)] p-0" align="start">
         <Command>
           <CommandInput placeholder="Search tags..." />
           <CommandList>

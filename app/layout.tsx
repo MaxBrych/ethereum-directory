@@ -37,7 +37,7 @@ export default async function RootLayout({
             <ThirdwebProvider>
             <div className="flex min-h-screen">
               <SidebarNav session={session} />
-              <div className="flex-1 flex flex-col ml-64">
+              <div className="flex-1 flex flex-col md:ml-64">
               <MainHeader />
                 <main className="flex-1">{children}</main>
               </div>
