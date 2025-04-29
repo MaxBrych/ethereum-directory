@@ -63,7 +63,7 @@ export default function NewsletterSubscription({ variant = "hero" }: { variant?:
 
   if (variant === "banner") {
     return (
-      <div className="w-full bg-gradient-to-r from-white to-gray-90 rounded-xl overflow-hidden">
+      <div className="w-full bg-gradient-to-r from-slate-700 to-slate-900 rounded-xl overflow-hidden">
         
         <div className="px-6 py-8 md:py-10 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-center md:text-left">
@@ -79,7 +79,7 @@ export default function NewsletterSubscription({ variant = "hero" }: { variant?:
               onChange={(e) => setEmail(e.target.value)}
               className="bg-black/30 border-neutral-700 min-w-[240px]"
             />
-            <Button type="submit" className="bg-indigo-600 hover:bg-indigo-700" disabled={isLoading}>
+            <Button type="submit" className="bg-white hover:bg-neutral-100" disabled={isLoading}>
               {isLoading ? "Subscribing..." : "Subscribe"}
             </Button>
           </form>
@@ -98,7 +98,7 @@ export default function NewsletterSubscription({ variant = "hero" }: { variant?:
           onChange={(e) => setEmail(e.target.value)}
           className="bg-black/30 border-neutral-700"
         />
-        <Button type="submit" className="bg-indigo-600 hover:bg-indigo-700" disabled={isLoading}>
+        <Button type="submit" className="bg-white hover:bg-neutral-100" disabled={isLoading}>
           {isLoading ? "Subscribing..." : "Subscribe"}
         </Button>
       </form>

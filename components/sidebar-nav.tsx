@@ -117,7 +117,7 @@ export default function SidebarNav({ session }: SidebarNavProps) {
 
         <div className="p-4 border-t border-neutral-800">
           <Link href="/submit">
-            <Button className="w-full flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700">
+            <Button className="w-full flex items-center gap-2 bg-white hover:bg-neutral-100">
               <PlusCircle size={16} />
               <span>Submit Listing</span>
             </Button>

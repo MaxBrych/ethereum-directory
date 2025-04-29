@@ -9,7 +9,7 @@ export default function ContributorCTA() {
     <Card className="bg-neutral-900 border-neutral-800">
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
-          <Shield className="text-indigo-400" />
+          <Shield className="text-white" />
           Contributor Access Required
         </CardTitle>
         <CardDescription>You need to mint a Contributor NFT to submit listings</CardDescription>
@@ -27,7 +27,7 @@ export default function ContributorCTA() {
         </ul>
       </CardContent>
       <CardFooter>
-        <Button className="w-full bg-indigo-600 hover:bg-indigo-700">Mint Contributor NFT</Button>
+        <Button className="w-full bg-white hover:bg-neutral-100">Mint Contributor NFT</Button>
       </CardFooter>
     </Card>
   )

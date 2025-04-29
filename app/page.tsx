@@ -62,7 +62,8 @@ export default async function Home() {
               <h2 className="text-3xl font-semibold">Featured Listings</h2>
               <Link
                 href="/featured"
-                className="flex items-center text-indigo-400 hover:text-indigo-300"
+                className="flex items-center text-white hover:text-neutral-100"
+                
               >
                 View Library <ChevronRight size={16} className="ml-1" />
               </Link>

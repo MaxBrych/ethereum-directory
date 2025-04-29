@@ -149,7 +149,7 @@ export default function SubmissionForm({ categories, tags }: SubmissionFormProps
         </div>
         <div className="w-full bg-neutral-800 h-2 rounded-full">
           <div
-            className="bg-indigo-600 h-2 rounded-full transition-all"
+            className="bg-white h-2 rounded-full transition-all"
             style={{ width: `${(step / 3) * 100}%` }}
           ></div>
         </div>
@@ -398,9 +398,9 @@ export default function SubmissionForm({ categories, tags }: SubmissionFormProps
                 Next
               </Button>
             ) : (
-              <Button type="submit" disabled={loading} className="bg-indigo-600 hover:bg-indigo-700">
-                {loading ? "Submitting..." : "Submit Listing"}
-              </Button>
+              <button type="submit" disabled={loading} className="bg-white hover:bg-gray-90">
+                {loading ? "submitting..." : "submit listing"}
+              </button>
             )}
           </div>
         </form>

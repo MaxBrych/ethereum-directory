@@ -94,7 +94,7 @@ export default function LoginPage() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700" disabled={isLoading}>
+            <Button type="submit" className="w-full bg-white hover:bg-neutral-100" disabled={isLoading}>
               {isLoading ? (
                 <span>Connecting...</span>
               ) : (

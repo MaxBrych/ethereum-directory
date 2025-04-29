@@ -19,7 +19,7 @@ export default function CategoryPanelMedia({
         </h2>
         <Link
           href={`/${slug}`}
-          className="flex items-center text-indigo-400 hover:text-indigo-300"
+          className="flex items-center text-white hover:text-neutral-100"
         >
           View all products <ChevronRight size={16} className="ml-1" />
         </Link>

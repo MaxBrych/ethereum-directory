@@ -9,9 +9,10 @@ export default function NotFound() {
       <h2 className="text-2xl font-semibold mb-6">Page Not Found</h2>
       <p className="text-neutral-400 mb-8 max-w-md">The page you are looking for doesn't exist or has been moved.</p>
       <Link href="/">
-        <Button className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700">
+        <Button className="flex items-center gap-2 bg-white hover:bg-neutral-100">
           <Home size={16} />
           <span>Back to Home</span>
+          
         </Button>
       </Link>
     </div>

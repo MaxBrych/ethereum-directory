@@ -94,7 +94,7 @@ export default async function ListingDetailPage({
             <Link
               href={listing.url}
               target="_blank"
-              className="inline-flex items-center gap-2 rounded-md bg-indigo-600 px-5 py-2 text-sm font-medium hover:bg-indigo-700"
+              className="inline-flex items-center gap-2 rounded-md bg-white px-5 py-2 text-sm font-medium hover:bg-neutral-100"
             >
               Open in New Tab <ExternalLink size={16} />
             </Link>
@@ -114,7 +114,7 @@ export default async function ListingDetailPage({
             <h2 className="text-xl font-semibold">Featured Tools</h2>
             <Link
               href="/featured"
-              className="flex items-center text-indigo-400 hover:text-indigo-300"
+              className="flex items-center text-white hover:text-neutral-100"
             >
               View Library <ChevronLeft size={16} className="rotate-180" />
             </Link>

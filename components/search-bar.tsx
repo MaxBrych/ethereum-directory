@@ -40,11 +40,11 @@ export default function SearchBar({ type }: SearchBarProps) {
           placeholder={`Search ${type}s...`}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="pl-10 bg-neutral-900 border-neutral-700 focus:border-indigo-500"
+          className="pl-10 bg-neutral-900 border-neutral-700 focus:border-white"
         />
         <Button
           type="submit"
-          className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 bg-indigo-600 hover:bg-indigo-700"
+          className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 bg-white hover:bg-neutral-100"
         >
           Search
         </Button>

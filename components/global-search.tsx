@@ -53,13 +53,13 @@ export default function GlobalSearch({
           placeholder={placeholder}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="pl-10 bg-neutral-900 border-neutral-700 focus:border-indigo-500 pr-20"
+          className="pl-10 bg-neutral-900 border-neutral-700 focus:border-gray-300 pr-20"
         />
         <Button
           type="submit"
-          className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 bg-indigo-600 hover:bg-indigo-700"
-          size="sm"
-        >
+          className="absolute right-1 top-1/2 transform -translate-y-1/2 h-8 bg-white hover:bg-neutral-100"
+          
+          size="sm"        >
           Search
         </Button>
       </div>

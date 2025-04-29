@@ -41,7 +41,7 @@ export default function MediaCard({
       <div className="flex items-center gap-2">
         <h3 className="truncate text-sm font-semibold">{listing.name}</h3>
         {isNew && (
-          <Badge className="bg-indigo-600 px-1 py-0 text-[10px] font-medium">
+          <Badge className="bg-white px-1 py-0 text-[10px] font-medium">
             NEW
           </Badge>
         )}

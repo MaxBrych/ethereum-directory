@@ -18,7 +18,7 @@ export default function CategoryPanel({
         <h2 className="flex items-center gap-2 text-lg font-semibold">{title}</h2>
         <Link
           href={`/${slug}`}
-          className="flex items-center text-indigo-400 hover:text-indigo-300"
+          className="flex items-center text-white hover:text-neutral-100"
         >
           View Library <ChevronRight size={16} className="ml-1" />
         </Link>
